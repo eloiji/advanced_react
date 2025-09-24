@@ -49,10 +49,6 @@ function RegistrationForm() {
       <form onSubmit={handleSubmit}>
         <fieldset>
           <h2>Sign Up</h2>
-          {password.isTouched && password.value.length < 8
-            ? PasswordErrorMessage()
-            : null}
-          {email && !validateEmail(email) ? EmailErrorMessage() : null}
           <div className="Field">
             <label>
               First name <sup>*</sup>
@@ -86,6 +82,7 @@ function RegistrationForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            {email && !validateEmail(email) ? EmailErrorMessage() : null}
           </div>
           <div className="Field">
             <label>
@@ -101,6 +98,9 @@ function RegistrationForm() {
               onBlur={(e) => setPassword({ ...password, isTouched: true })}
               value={password.value}
             />
+            {password.isTouched && password.value.length < 8
+              ? PasswordErrorMessage()
+              : null}
           </div>
           <div className="Field">
             <label>
