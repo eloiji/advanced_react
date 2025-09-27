@@ -1,4 +1,5 @@
 import "./App.css";
+import FetchingData from "./components/FetchingData";
 import ManagingStates from "./components/ManagingState";
 import RegistrationForm from "./components/RegistrationForm";
 import Root from "./components/ThemeSettings";
@@ -9,6 +10,7 @@ function App() {
       <RegistrationForm />
       <Root />
       <ManagingStates />
+      <FetchingData />
     </div>
   );
 }
