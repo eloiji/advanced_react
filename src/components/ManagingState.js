@@ -1,3 +1,4 @@
+import "./ManagingStates.css";
 import { useState } from "react";
 
 function ManagingStates() {
@@ -21,7 +22,7 @@ function ManagingStates() {
   }
 
   return (
-    <div style={{ padding: "40px", border: "1px solid #ccc" }}>
+    <div className="gift-card">
       <h1>Gift Card Page</h1>
       <h2>
         Customer: {giftCard.firstName} {giftCard.lastName}

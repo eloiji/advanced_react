@@ -63,7 +63,7 @@ function ThemeSettings() {
   const { theme } = useTheme();
   return (
     <div
-      className="App"
+      className="theme"
       style={{
         backgroundColor: theme === "light" ? "white" : "black",
       }}
