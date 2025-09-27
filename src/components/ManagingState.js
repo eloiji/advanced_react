@@ -1,4 +1,4 @@
-import "./ManagingStates.css";
+import "./Components.css";
 import { useState } from "react";
 
 function ManagingStates() {
@@ -22,7 +22,7 @@ function ManagingStates() {
   }
 
   return (
-    <div className="gift-card">
+    <div className="component">
       <h1>Gift Card Page</h1>
       <h2>
         Customer: {giftCard.firstName} {giftCard.lastName}
