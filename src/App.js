@@ -1,5 +1,6 @@
 import "./App.css";
 import CreateCustomHook from "./components/CreateCustomHook";
+import CustomRadioGroup from "./components/CustomRadioGroup";
 import FetchingData from "./components/FetchingData";
 import ManagingStates from "./components/ManagingState";
 import RegistrationForm from "./components/RegistrationForm";
@@ -13,6 +14,7 @@ function App() {
       <ManagingStates />
       <FetchingData />
       <CreateCustomHook />
+      <CustomRadioGroup />
     </div>
   );
 }
