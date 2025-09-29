@@ -4,6 +4,7 @@ import CustomRadioGroup from "./components/CustomRadioGroup";
 import FetchingData from "./components/FetchingData";
 import ManagingStates from "./components/ManagingState";
 import RegistrationForm from "./components/RegistrationForm";
+import ScrollerPositionWithRenderProps from "./components/ScrollerPositionWithRenderProps";
 import Root from "./components/ThemeSettings";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <FetchingData />
       <CreateCustomHook />
       <CustomRadioGroup />
+      <ScrollerPositionWithRenderProps />
     </div>
   );
 }
